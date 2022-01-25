@@ -8,7 +8,8 @@ function Projects() {
       <nav
         style={{
           borderRight: "solid 1px",
-          padding: "1rem"
+          padding: "1rem",
+          display: 'block'
         }}
       >
         {projects.map(project => (
