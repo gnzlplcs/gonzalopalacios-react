@@ -1,5 +1,6 @@
 {
   "name": "gonzalopalacios-react",
+  "homepage": "https://gonzalopalacios.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

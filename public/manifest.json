@@ -1,9 +1,10 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "author": "Gonzalo Palacios",
+  "short_name": "Personal Website",
+  "name": "Gonzalo Palacios' Personal Website",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "expand-horizontal-regular-24.ico",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     },
