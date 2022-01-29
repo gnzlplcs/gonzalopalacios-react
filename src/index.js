@@ -30,7 +30,7 @@ render(
         <Route
           path="*"
           element={
-            <main style={{ padding: "1rem" }}>
+            <main>
               <p>Sorry, there's nothing here yet</p>
             </main>
           }

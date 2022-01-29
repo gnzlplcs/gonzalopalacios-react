@@ -1,0 +1,7 @@
+@import './sass/colors';
+@import './sass/reset';
+
+* {
+  background-color: $gray-light;
+  color: $red-darker
+}
