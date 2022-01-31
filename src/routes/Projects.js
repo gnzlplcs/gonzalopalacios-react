@@ -5,7 +5,7 @@ import { getProjects } from "../data/projectsList";
 function Projects() {
   let projects = getProjects();
   return (
-    <>
+    <main>
       <nav>
         {projects.map(project => (
           <NavLink
@@ -17,7 +17,7 @@ function Projects() {
         ))}
       </nav>
       <Outlet />
-    </>
+    </main>
   );
 }
 

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -135,8 +136,84 @@ table {
 }
 
 * {
-  background-color: #F5F3F4;
-  color: #660708;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #480CA8;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 5rem auto 1fr auto;
+  height: 100vh;
+}
+.container header {
+  background: #3A0CA3;
+  text-align: center;
+  width: 100%;
+}
+
+.main-title {
+  font-family: "Carter One", cursive;
+  font-size: 2rem;
+  color: #F72585;
+}
+
+.main-subtitle {
+  font-family: "Open Sans", sans-serif;
+  color: #4895EF;
+  letter-spacing: 0.5rem;
+}
+
+.container nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+}
+.container nav ul li {
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  background: #7209B7;
+  border: 1px solid #560BAD;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.container nav ul li:hover {
+  background: #560BAD;
+  border-bottom: 1px solid #3F37C9;
+}
+.container nav ul li a {
+  text-decoration: none;
+  color: #F72585;
+}
+.container nav ul li a:hover {
+  color: #4895EF;
+}
+
+.container main {
+  background: #4CC9F0;
+  padding: 2rem;
+  font-family: "Noto Serif", serif;
+}
+
+.container footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 3rem;
+  font-family: "Open Sans", sans-serif;
+  color: #F72585;
+  background: #3A0CA3;
+}
+.container footer img {
+  width: 2rem;
+  margin: 2rem;
 }
 
 /*# sourceMappingURL=App.css.map */

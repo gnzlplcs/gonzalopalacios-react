@@ -1,7 +1,101 @@
 @import './sass/colors';
+@import './sass/layout';
+@import './sass/typography';
 @import './sass/reset';
 
 * {
-  background-color: $gray-light;
-  color: $red-darker
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $trypan-blue;
+}
+
+.container {
+  display: grid;
+  grid-template-rows: 5rem auto 1fr auto;
+  height: 100vh;
+
+  @include MQ('S') {
+  }
+  @include MQ('M') {
+  }
+  @include MQ('L') {
+  }
+}
+
+.container header {
+  background: $trypan-blue-alt;
+  text-align: center;
+  width: 100%;
+}
+
+.main-title {
+  font-family: $font-main-title;
+  font-size: 2rem;
+  color: $flickr-pink;
+}
+
+.main-subtitle {
+  font-family: $font-title;
+  color: $dodger-blue;
+  letter-spacing: 0.5rem;
+}
+
+.container nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 1rem;
+
+  & li {
+    margin: 0 0.5rem;
+    padding: 0.5rem 1rem;
+    font-family: $font-title;
+    background: $purple;
+    border: 1px solid $purple-alt;
+    border-radius: 5px;
+    cursor: pointer;
+
+    &:hover {
+      background: $purple-alt;
+      border-bottom: 1px solid $persian-blue;
+    }
+
+    & a {
+      text-decoration: none;
+      color: $flickr-pink;
+
+      &:hover {
+        color: $dodger-blue;
+      }
+    }
+
+  }
+
+}
+
+.container main {
+  background: $vivid-sky-blue;
+  padding: 2rem;
+  font-family: $font-text;
+}
+
+.container footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 4rem 3rem;
+  font-family: $font-title;
+  color: $flickr-pink;
+  background: $trypan-blue-alt;
+
+  & img {
+    width: 2rem;
+    margin: 2rem;
+  }
 }

@@ -1,11 +1,12 @@
 import React from 'react';
+import { CustomLink } from '../utilities/CustomLink';
 
 function Contact() {
   return (
-    <>
-      <p>Send a message: <a href="mailto:hello@gonzalopalacios.com" target="_blank" rel="noopener noreferrer">hello@gonzalopalacios.com</a>, and Twitter (<a href="https://twitter.com/gnzlplcs" target="_blank" rel="noopener noreferrer">@gnzlplcs</a>)</p>
-      <p>My repos can be visited in my <a href="https://github.com/gnzlplcs" target="_blank" rel="noopener noreferrer">Github profile</a>.</p>
-    </>
+    <main>
+      <p>Send me a message: <CustomLink url="mailto:hello@gonzalopalacios.com" value="hello@gonzalopalacios.com"/></p>
+      <p>My repos can be visited in my <CustomLink url="https://github.com/gnzlplcs" value="Github profile" />.</p>
+    </main>
   )
 }
 
