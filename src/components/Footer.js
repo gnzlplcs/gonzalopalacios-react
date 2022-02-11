@@ -34,7 +34,7 @@ function Footer() {
             />}
         />
       </div>
-      <p>Build with 💡 by <CustomLink url="https://twitter.com/gnzlplcs" value="@gnzlplcs" /></p>
+      <p>Build with <span role='img' aria-label='Bulb emoji'>💡</span> by <CustomLink url="https://twitter.com/gnzlplcs" value="@gnzlplcs" /></p>
     </footer>
   )
 }
