@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function NavBar() {
+const NavBar = () => {
   return (
     <nav>
        <ul>
-         <li><Link to='/'>Home</Link></li>
-         <li><Link to='/about'>About</Link></li>
-         <li><Link to='/projects'>Projects</Link></li>
-         <li><Link to='/contact'>Contact</Link></li>
+         <Link className="clean-link" to='/'><li>Home</li></Link>
+         <Link className="clean-link" to='/about'><li>About</li></Link>
+         <Link className="clean-link" to='/projects'><li>Projects</li></Link>
+         <Link className="clean-link" to='/contact'><li>Contact</li></Link>
        </ul>
     </nav>
   );

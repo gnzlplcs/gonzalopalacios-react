@@ -1,12 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-function Header(props) {
+const Header = ({ title, subtitle }) => {
   return (
     <header>
-      <h1><span className="main-title">Gonzalo Palacios</span></h1>
-      <p><span className='main-subtitle'>Web Developer</span></p>
+      <Link className='clean-link' to='/'>
+        <h1><span className="main-title">{title}</span></h1>
+      </Link>
+      <h2><span className='main-subtitle'>{subtitle}</span></h2>
     </header>
-  )
+  );
 }
 
 export { Header };
