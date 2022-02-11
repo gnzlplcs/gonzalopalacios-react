@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Carter+One&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -150,23 +150,23 @@ body {
   grid-template-rows: auto auto 1fr auto;
   height: 100vh;
 }
-.container header {
-  background: #85FFC7;
+
+header {
+  background: #297373;
   text-align: center;
   width: 100%;
   height: auto;
   padding: 2rem;
 }
-
-.main-title {
-  font-family: "Carter One", cursive;
-  font-size: 2rem;
-  color: #297373;
+header .main-title {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 2.5rem;
+  color: #85FFC7;
 }
-
-.main-subtitle {
-  font-family: "Open Sans", sans-serif;
-  color: #39393A;
+header .main-subtitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 1.3rem;
+  color: #FF8552;
   letter-spacing: 0.5rem;
 }
 
@@ -179,7 +179,7 @@ body {
 .container nav ul li {
   margin: 0 0.5rem;
   padding: 0.5rem 1rem;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Inconsolata", monospace;
   background: #85FFC7;
   border-radius: 5px;
   cursor: pointer;
@@ -192,26 +192,74 @@ body {
   text-decoration: none;
   color: #39393A;
 }
+.container nav ul li a:hover {
+  color: #39393A;
+}
 
-.container main {
+main {
   background: #E6E6E6;
+  color: #39393A;
   padding: 2rem;
   font-family: "Noto Serif", serif;
 }
+main a {
+  text-decoration: none;
+}
 
-.container footer {
+.container .homeContent img {
+  width: 100%;
+  max-width: 540px;
+}
+
+.container .projects nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+@media only screen and (max-width: 960px) {
+  .container .projects {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .container .projects {
+    grid-template-columns: 1fr 3fr;
+  }
+}
+
+.card-project {
+  min-width: 5rem;
+  max-width: auto;
+  padding: 0.5rem;
+  background-color: #85FFC7;
+  border-radius: 0.25rem;
+}
+
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 4rem 3rem;
-  font-family: "Open Sans", sans-serif;
+  padding: 2rem 3rem;
+  font-family: "Inconsolata", monospace;
   color: #E6E6E6;
   background: #39393A;
 }
-.container footer img {
+footer img {
   width: 2rem;
   margin: 2rem;
+}
+footer a {
+  text-decoration: none;
+  color: #E6E6E6;
+}
+footer a:hover {
+  color: #85FFC7;
+}
+
+.clean-link {
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=App.css.map */

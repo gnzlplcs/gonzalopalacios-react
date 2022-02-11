@@ -1,5 +1,6 @@
 @import './sass/colors';
 @import './sass/layout';
+@import './sass/mixins';
 @import './sass/typography';
 @import './sass/reset';
 
@@ -13,38 +14,34 @@ body {
   background-color: $platinum
 }
 
+
 .container {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
   height: 100vh;
-
-  @include MQ('S') {
-  }
-  @include MQ('M') {
-  }
-  @include MQ('L') {
-  }
 }
 
-.container header {
-  background: $aquamarine;
+header {
+  background: $skobeloff;
   text-align: center;
   width: 100%;
   height: auto;
   padding: 2rem;
+
+  & .main-title {
+    font-family: $font-main-title;
+    font-size: 2.5rem;
+    color: $aquamarine;
+  }
+
+  & .main-subtitle {
+    font-family: $font-main-title;
+    font-size: 1.3rem;
+    color: $coral;
+    letter-spacing: 0.5rem;
+  }
 }
 
-.main-title {
-  font-family: $font-main-title;
-  font-size: 2rem;
-  color: $skobeloff;
-}
-
-.main-subtitle {
-  font-family: $font-title;
-  color: $onyx;
-  letter-spacing: 0.5rem;
-}
 
 .container nav ul {
   display: flex;
@@ -63,30 +60,67 @@ body {
 
     &:hover {
       background: $coral;
-      // border-bottom: 1px solid $coral;]
       color: $onyx;
     }
 
     & a {
-      text-decoration: none;
-      color: $onyx;
+      @include customLink($onyx, $onyx);
     }
   }
 }
 
-.container main {
+main {
   background: $platinum;
+  color: $onyx;
   padding: 2rem;
   font-family: $font-text;
+
+  & a {
+    text-decoration: none;
+  }
 }
 
-.container footer {
+.container .homeContent {
+  & img {
+    width: 100%;
+    max-width: 540px;
+  }
+}
+
+.container .projects {
+  & nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  @include MQ(M) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  @include MQ(L) {
+    grid-template-columns: 1fr 3fr;
+  }
+
+}
+
+.card-project {
+  min-width: 5rem;
+  max-width: auto;
+  padding: 0.5rem;
+
+  background-color: $aquamarine;
+  border-radius: 0.25rem;
+}
+
+footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  padding: 4rem 3rem;
+  padding: 2rem 3rem;
   font-family: $font-title;
   color: $platinum;
   background: $onyx;
@@ -95,4 +129,12 @@ body {
     width: 2rem;
     margin: 2rem;
   }
+
+  & a {
+    @include customLink($platinum, $aquamarine);
+  }
+}
+
+.clean-link {
+  text-decoration: none;
 }
