@@ -2,11 +2,11 @@ import React from 'react';
 import { NavLink, Outlet } from "react-router-dom";
 import { getProjects } from "../data/projectsList";
 
-function Projects() {
+const Projects = () => {
   let projects = getProjects();
   return (
-    <main>
-      <nav>
+    <main className="projects">
+      <nav className='projects--nav'>
         {projects.map(project => (
           <NavLink
             to={`/projects/${project.number}`}

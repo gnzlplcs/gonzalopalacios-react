@@ -1,11 +1,6 @@
 import React from 'react';
+import { HomeContent } from '../components/HomeContent';
 
-const Home = () => {
-  return (
-    <main>
-      Welcome! I'm glad to see you here.
-    </main>
-  );
-}
+const Home = () => <HomeContent />
 
 export { Home };

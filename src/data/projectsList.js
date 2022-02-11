@@ -6,7 +6,7 @@ let projects = [
     repo: "https://github.com/gnzlplcs/portfolio/tree/main/final-project",
     rate: "⭐⭐⭐⭐",
     number: 1001,
-    image: '1001.png'
+    image: '1001'
   },
   {
     name: "Tic-Tac-Toe",
@@ -15,7 +15,7 @@ let projects = [
     repo: 'https://github.com/gnzlplcs/tic-tac-toe-react',
     rate: "⭐⭐⭐",
     number: 1002,
-    image: '1002.png'
+    image: '1002'
   },
   {
     name: "Mixed Messages",
@@ -24,7 +24,7 @@ let projects = [
     repo: "https://github.com/gnzlplcs/mixed-messages",
     rate: "⭐⭐⭐⭐⭐",
     number: 1003,
-    image: '1003.png'
+    image: '1003'
   },
   {
     name: "SchoolScreen",
@@ -33,7 +33,7 @@ let projects = [
     repo: "https://glitch.com/edit/#!/gonzalo-personal-final-project",
     rate: "⭐⭐⭐⭐",
     number: 1004,
-    image: '1004.png'
+    image: '1004'
   },
   {
     name: "Lima Business",
@@ -42,7 +42,7 @@ let projects = [
     repo: "https://github.com/gnzlplcs/gnzlplcs.github.io/tree/master/final-project",
     rate: "⭐⭐⭐",
     number: 1005,
-    image: '1004.png'
+    image: '1004'
   }
 ];
 
