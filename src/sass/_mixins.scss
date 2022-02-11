@@ -1,0 +1,8 @@
+@mixin customLink($color, $second-color) {
+  text-decoration: none;
+  color: $color;
+
+  &:hover {
+    color: $second-color;
+  }
+}
