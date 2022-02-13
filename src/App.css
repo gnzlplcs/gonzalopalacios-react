@@ -1,8 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html,
 body,
 div,
@@ -136,19 +136,49 @@ table {
 }
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background-color: #E6E6E6;
 }
 
 .container {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
-  height: 100vh;
+}
+
+.container footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3rem;
+}
+.container footer .icons-area {
+  margin: 0 auto;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+}
+@media only screen and (min-width: 600px) {
+  .container footer .icons-area {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media only screen and (min-width: 900px) {
+  .container footer .icons-area {
+    grid-gap: 1rem;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .container footer .icons-area {
+    grid-gap: 2rem;
+  }
+}
+.container footer p {
+  padding: 1rem;
+}
+
+body {
+  background-color: #E6E6E6;
 }
 
 header {
@@ -216,17 +246,6 @@ main a {
   flex-direction: column;
   justify-content: space-between;
 }
-@media only screen and (max-width: 960px) {
-  .container .projects {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
-}
-@media only screen and (max-width: 1200px) {
-  .container .projects {
-    grid-template-columns: 1fr 3fr;
-  }
-}
 
 .card-project {
   min-width: 5rem;
@@ -237,11 +256,6 @@ main a {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem 3rem;
   font-family: "Inconsolata", monospace;
   color: #E6E6E6;
   background: #39393A;

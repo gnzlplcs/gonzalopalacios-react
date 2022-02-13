@@ -1,25 +1,28 @@
-@import './sass/colors';
-@import './sass/layout';
-@import './sass/mixins';
-@import './sass/typography';
-@import './sass/reset';
+// Abstract files: variables, mixins, and similar components
+@import './abstracts/variables';
+@import './abstracts/mixins';
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// Components files: buttons, carousels, tabs, modals, cards...
+// @import './components/';
+
+// Core files: typogrphy, resets, boilerplate code
+// this should not be overwritten
+@import './core/reset';
+@import './core/typography';
+
+// Layout files: media queries, header, footer, etc.
+@import './layout/layout';
+
+// Routes files: settings for each route, if it's needed
+// @import './routes/';
+
 
 body {
   background-color: $platinum
 }
 
 
-.container {
-  display: grid;
-  grid-template-rows: auto auto 1fr auto;
-  height: 100vh;
-}
+
 
 header {
   background: $skobeloff;
@@ -94,14 +97,7 @@ main {
     justify-content: space-between;
   }
 
-  @include MQ(M) {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-  }
 
-  @include MQ(L) {
-    grid-template-columns: 1fr 3fr;
-  }
 
 }
 
@@ -115,12 +111,11 @@ main {
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
 
-  padding: 2rem 3rem;
   font-family: $font-title;
   color: $platinum;
   background: $onyx;
