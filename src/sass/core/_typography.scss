@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
-$font-main-title: 'Ubuntu', sans-serif;
-$font-title: 'Inconsolata', monospace;
-$font-text: 'Noto Serif', serif;
+header .main-title,
+header .main-subtitle {
+  font-family: $font-main-title;
+}
+

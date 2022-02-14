@@ -139,16 +139,37 @@ table {
   box-sizing: border-box;
 }
 
+header .main-title,
+header .main-subtitle {
+  font-family: "Ubuntu", sans-serif;
+}
+
 .container {
   display: grid;
   grid-template-rows: auto auto 1fr auto;
+  max-width: 850px;
+}
+
+.container header {
+  width: 100vw;
+}
+
+.container main {
+  margin: 0 auto;
+  max-width: 850px;
+  min-height: calc(100vh - 510px);
+}
+@media only screen and (min-width: 600px) {
+  .container main {
+    min-height: calc(100vh - 412px);
+  }
 }
 
 .container footer {
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100vw;
   padding: 3rem;
 }
 .container footer .icons-area {
@@ -184,20 +205,12 @@ body {
 header {
   background: #297373;
   text-align: center;
-  width: 100%;
   height: auto;
   padding: 2rem;
 }
 header .main-title {
-  font-family: "Ubuntu", sans-serif;
   font-size: 2.5rem;
   color: #85FFC7;
-}
-header .main-subtitle {
-  font-family: "Ubuntu", sans-serif;
-  font-size: 1.3rem;
-  color: #FF8552;
-  letter-spacing: 0.5rem;
 }
 
 .container nav ul {

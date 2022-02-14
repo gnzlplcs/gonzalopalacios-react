@@ -19,7 +19,7 @@ const App = () => {
           exact path="/"
           element={
             <>
-              <Header title="Gonzalo Palacios" subtitle="React Web Developer" />
+              <Header title="Gonzalo Palacios" />
               <NavBar />
               <Outlet />
               <Footer />

@@ -27,21 +27,12 @@ body {
 header {
   background: $skobeloff;
   text-align: center;
-  width: 100%;
   height: auto;
   padding: 2rem;
 
   & .main-title {
-    font-family: $font-main-title;
     font-size: 2.5rem;
     color: $aquamarine;
-  }
-
-  & .main-subtitle {
-    font-family: $font-main-title;
-    font-size: 1.3rem;
-    color: $coral;
-    letter-spacing: 0.5rem;
   }
 }
 

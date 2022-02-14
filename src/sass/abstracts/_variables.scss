@@ -1,3 +1,6 @@
+// standard width
+$page-width: 850px;
+
 // Color variables
 $aquamarine: #85FFC7;
 $skobeloff: #297373;
@@ -5,7 +8,7 @@ $coral: #FF8552;
 $platinum: #E6E6E6;
 $onyx: #39393A;
 
-// Breakpoint variables
-$S: 540px;
-$M: 960px;
-$L: 1200px;
+// Typography variables
+$font-main-title: 'Ubuntu', sans-serif;
+$font-title: 'Inconsolata', monospace;
+$font-text: 'Noto Serif', serif;
