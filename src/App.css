@@ -1,8 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+.homeContent .img-container {
+  max-width: 150px;
+  border-radius: 1rem;
+}
+.homeContent .img-container img {
+  width: 100%;
+}
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
-@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 html,
 body,
 div,
