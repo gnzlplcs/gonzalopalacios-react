@@ -1,12 +1,14 @@
 // Abstract files: variables, mixins, and similar components
-@import './abstracts/variables';
 @import './abstracts/mixins';
+@import './abstracts/variables';
 
 // Components files: buttons, carousels, tabs, modals, cards...
+@import './components/header.scss';
 @import './components/homeContent.scss';
 
 // Core files: typogrphy, resets, boilerplate code
 // this should not be overwritten
+@import './core/color';
 @import './core/reset';
 @import './core/typography';
 
@@ -17,23 +19,13 @@
 // @import './routes/';
 
 
-body {
-  background-color: $platinum
-}
-
-
-
 
 header {
-  background: $skobeloff;
   text-align: center;
   height: auto;
   padding: 2rem;
 
-  & .main-title {
-    font-size: 2.5rem;
-    color: $aquamarine;
-  }
+ 
 }
 
 
@@ -47,7 +39,6 @@ header {
     margin: 0 0.5rem;
     padding: 0.5rem 1rem;
     font-family: $font-title;
-    background: $aquamarine;
     // border: 1px solid $aquamarine;
     border-radius: 5px;
     cursor: pointer;

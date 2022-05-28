@@ -20,7 +20,6 @@ const App = () => {
           element={
             <>
               <Header title="Gonzalo Palacios" />
-              <NavBar />
               <Outlet />
               <Footer />
             </>

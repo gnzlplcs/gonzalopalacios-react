@@ -1,10 +1,39 @@
 @import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+header .main-title {
+  font-size: 1.2rem;
+}
+
 .homeContent .img-container {
   max-width: 150px;
   border-radius: 1rem;
 }
 .homeContent .img-container img {
   width: 100%;
+}
+
+body {
+  background: #E6E6E6;
+}
+
+.container header {
+  background: #E6E6E6;
+}
+.container header .main-title {
+  color: #023047;
+}
+
+.container nav ul li {
+  background: #E6E6E6;
+  color: #126782;
+}
+
+.container main {
+  color: #070218;
+}
+
+.container footer {
+  background: #E6E6E6;
+  color: #126782;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -154,18 +183,28 @@ header .main-subtitle {
 
 .container {
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
   max-width: 850px;
+  margin: 0 auto;
 }
 
 .container header {
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.container header .brand-name {
+  justify-self: flex-start;
+  align-self: center;
+}
+.container header nav {
+  justify-self: flex-end;
 }
 
 .container main {
   margin: 0 auto;
   max-width: 850px;
-  min-height: calc(100vh - 510px);
+  min-height: calc(100% - 486px);
 }
 @media only screen and (min-width: 600px) {
   .container main {
@@ -177,7 +216,7 @@ header .main-subtitle {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   padding: 3rem;
 }
 .container footer .icons-area {
@@ -206,19 +245,10 @@ header .main-subtitle {
   padding: 1rem;
 }
 
-body {
-  background-color: #E6E6E6;
-}
-
 header {
-  background: #297373;
   text-align: center;
   height: auto;
   padding: 2rem;
-}
-header .main-title {
-  font-size: 2.5rem;
-  color: #85FFC7;
 }
 
 .container nav ul {
@@ -231,7 +261,6 @@ header .main-title {
   margin: 0 0.5rem;
   padding: 0.5rem 1rem;
   font-family: "Inconsolata", monospace;
-  background: #85FFC7;
   border-radius: 5px;
   cursor: pointer;
 }

@@ -5,7 +5,10 @@ import HomeImg from '../assets/images/my-avatar.jpg'
 const HomeContent = () => {
   return (
     <main className='homeContent'>
-      <h1>Welcome! I'm glad to see you here.</h1>
+      <div>
+        <h1>Hi there! I'm glad to see you here.</h1>
+        <p>Welcome to my personal site. Hope you feel comfortable here. My name is Gonzalo, I'm a Web Frontend Developer.</p>
+      </div>
       <div className='img-container'>
         <CustomImg
           src={HomeImg}

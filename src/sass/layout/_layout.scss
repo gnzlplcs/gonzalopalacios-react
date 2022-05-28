@@ -1,17 +1,29 @@
 .container {
   display: grid;
-  grid-template-rows: auto auto 1fr auto;
+  grid-template-rows: auto 1fr auto;
   max-width: $page-width;
-  }
+  margin: 0 auto;
+}
 
 .container header {
-  width: 100vw;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  & .brand-name {
+    justify-self: flex-start;
+    align-self: center;
+  }
+
+  & nav {
+    justify-self: flex-end;
+  }
 }
 
 .container main {
   margin: 0 auto;
   max-width: $page-width;
-  min-height: calc(100vh - 510px);
+  min-height: calc(100% - 486px);
 
   @include for-size(tablet-portrait-up) {
     min-height: calc(100vh - 412px);
@@ -23,7 +35,7 @@
   flex-direction: column;
   align-items: center;
 
-  width: 100vw;
+  width: 100%;
   padding: 3rem;
 
   & .icons-area {
